@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Jeevana</h1>
+  <nav>
+    <a href="#about" class="nav-link active">About</a>
+    <a href="#skills" class="nav-link">Skills</a>
+    <a href="#internships" class="nav-link">Internships</a>
+    <a href="#certifications" class="nav-link">Certifications</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <div class="photo" aria-label="Profile photo of Jeevana">
+      <img src="pic.png" alt="Jeevana profile photo" />
+    </div>
+    <div class="bio">
+      <h2 class="section-title">About Me</h2>
+      <p>Hello! I am Jeevana, an enthusiastic engineering student passionate about Frontend development and AI technologies. I enjoy solving challenging problems, building innovative projects, and learning new skills. Currently pursuing my Bachelor's degree in Computer Science and Engineering.</p>
+      <p>Feel free to explore my skills and projects below or get in touch through the contact form!</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skill">
+      <div class="skill-name">C</div>
+      <div class="progress-bar" aria-label="C skill level">
+        <div class="progress-bar-inner" style="width: 85%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Java</div>
+      <div class="progress-bar" aria-label="Java skill level">
+        <div class="progress-bar-inner" style="width: 50%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="progress-bar" aria-label="Python skill level">
+        <div class="progress-bar-inner" style="width: 90%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="progress-bar" aria-label="HTML skill level">
+        <div class="progress-bar-inner" style="width: 80%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="progress-bar" aria-label="CSS skill level">
+        <div class="progress-bar-inner" style="width: 75%;"></div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="progress-bar" aria-label="JavaScript skill level">
+        <div class="progress-bar-inner" style="width: 75%;"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="internships">
+    <h2 class="section-title">Internships</h2>
+    <div class="item-list">
+      <div class="item" tabindex="0" aria-label="AWS Cloud Internship">
+        <div class="item-title">AWS Cloud Intern</div>
+        <div class="item-duration">July 2024 - September 2024</div>
+        <div class="item-description">
+          Completed AWS Cloud training by EduSkills. Gained hands-on experience with core AWS services like EC2, S3, IAM, RDS, and VPC. Learned cloud computing, deployment, and security basics.
+        </div>
+      </div>
+      <div class="item" tabindex="0" aria-label="Web Fullstack Virtual Internship">
+        <div class="item-title">Web Fullstack Virtual Intern</div>
+        <div class="item-duration">October 2024 - December 2024</div>
+        <div class="item-description">
+          Completed Web Full Stack Development by EduSkills. Gained skills in HTML, CSS, JS, React, Node.js, MongoDB, REST APIs, and Git through hands-on projects and real-world applications.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <h2 class="section-title">Certifications</h2>
+    <div class="item-list">
+      <div class="item" tabindex="0" aria-label="Certification in The joy of programming using Python from NPTEL during 2024">
+        <div class="item-title">Data Science Professional Certificate</div>
+        <div class="item-duration">Issued by NPTEL, 2024</div>
+        <div class="item-description">
+          Learned Python basics, problem-solving, control structures, functions, recursion, and data structures through practical coding tasks.
+        </div>
+      </div>
+      <div class="item" tabindex="0" aria-label="Certification in Social Network Analysis from NPTEL during 2024">
+        <div class="item-title">Social Network Analysis</div>
+        <div class="item-duration">Issued by NPTEL, 2024</div>
+        <div class="item-description">
+          Gained knowledge of graph theory, network structures, centrality, community detection, and real-world network analysis techniques.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" tabindex="0">
+    <h2 class="section-title">Projects</h2>
+    <div class="project-card" tabindex="0" aria-label="Project: Career Elevate">
+      <div class="project-title">Career Elevate</div>
+      <div class="project-desc">Developed using HTML, CSS, React.js for Frontend, Node.js, Express.js for Backend, and MongoDB database.</div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <form id="contact-form" aria-label="Contact form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required autocomplete="name" />
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+      
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+      
+      <button type="submit">Send</button>
+    </form>
+    <p id="form-status" role="alert" aria-live="polite"></p>
+    
+    <div class="social-links">
+      <h3>Connect with me:</h3>
+      <a href="https://www.linkedin.com/in/jeevana-cheedella-35ba38254" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/CheedellaJeevana" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2024 Jeevana - Engineering Student Portfolio
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
